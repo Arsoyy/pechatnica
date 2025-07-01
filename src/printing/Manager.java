@@ -15,6 +15,8 @@ public class Manager extends Employee {
         this.actualRevenue = revenue;
     }
 
+
+
     @Override
     public double calculateSalary() {
         if (actualRevenue > revenueThreshold) {

@@ -15,7 +15,7 @@ public class Paper {
 
     public double getPrice() {
         // Увеличение с 20% на стъпка нагоре от A5
-        double multiplier = 1 + 0.2 * (size.getMultiplier() - 1);
+        double multiplier = 1 + 0.2 * (size.getPriceMultiplier() - 1);
         return basePriceA5 * multiplier;
     }
 

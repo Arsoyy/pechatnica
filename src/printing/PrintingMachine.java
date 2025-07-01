@@ -61,6 +61,10 @@ public class PrintingMachine {
         return currentPaperLoaded;
     }
 
+    public Map<Publication, Integer> getPrintedPublications() {
+        return printedPublications;
+    }
+
     @Override
     public String toString() {
         return "Машина [" + id + "] | Цветен печат: " + (colorCapable ? "Да" : "Не") +

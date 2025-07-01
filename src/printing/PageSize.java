@@ -13,7 +13,7 @@ public enum PageSize {
         this.multiplier = multiplier;
     }
 
-    public int getMultiplier() {
+    public int getPriceMultiplier() {
         return multiplier;
     }
 }

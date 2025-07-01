@@ -3,7 +3,7 @@ import printing.*;
 public class main {
     public static void main(String[] args) {
         // Създаваме печатница
-        PrintingHouse house = new PrintingHouse("Мега Принт", 100, 5, 10000);
+        PrintingHouse house = new PrintingHouse("Мега Принт", 50, 5, 10000);
 
         // Добавяме служители
         house.addEmployee(new MachineOperator("Иван", 1200));
@@ -17,9 +17,9 @@ public class main {
         house.addMachine(bwMachine);
 
         // Купуваме три вида хартия
-        Paper bookPaper = new Paper(PaperType.NORMAL, PageSize.A3, 0.10);     // A3 нормална
-        Paper newspaperPaper = new Paper(PaperType.NEWSPAPER, PageSize.A5, 0.10); // A5 вестникарска
-        Paper posterPaper = new Paper(PaperType.GLOSSY, PageSize.A4, 0.10);   // A4 гланцирана
+        Paper bookPaper = new Paper(PaperType.NORMAL, PageSize.A5, 0.10);     // A3 нормална
+        Paper newspaperPaper = new Paper(PaperType.NEWSPAPER, PageSize.A4, 0.10); // A5 вестникарска
+        Paper posterPaper = new Paper(PaperType.GLOSSY, PageSize.A3, 0.10);   // A4 гланцирана
 
         house.buyPaper(bookPaper, 3000);      // за книгата
         house.buyPaper(newspaperPaper, 2000); // за вестника
